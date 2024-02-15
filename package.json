@@ -1,0 +1,25 @@
+{
+  "name": "storybook",
+  "version": "1.0.0",
+  "description": "A simple storybook proj",
+  "main": "index.js",
+  "devDependencies": {
+    "@storybook/addon-essentials": "^7.6.8",
+    "@storybook/addon-interactions": "^7.6.8",
+    "@storybook/addon-links": "^7.6.8",
+    "@storybook/blocks": "^7.6.8",
+    "@storybook/html": "^7.6.8",
+    "@storybook/html-webpack5": "^7.6.8",
+    "@storybook/test": "^7.6.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.69.7",
+    "storybook": "^7.6.8"
+  },
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded src:src",
+    "sass-prod": "sass --no-source-map --style=compressed src:src",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  }
+}
